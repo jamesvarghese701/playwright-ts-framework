@@ -126,6 +126,6 @@ jobs:
       - name: Report URLs
         run: |
           echo "Reports Published!"
-          echo "Allure Report: https://jamesvarghese701.github.io/playwright-ts-framework/allure/index.html"
-          echo "Cucumber HTML Report: https://jamesvarghese701.github.io/playwright-ts-framework/cucumber/index.html"
+          echo "Allure Report: https://jamesvarghese701.github.io/playwright-ts-framework/allure-report/index.html"
+          echo "Cucumber HTML Report: https://jamesvarghese701.github.io/playwright-ts-framework/reports/cucumber-report.html"
 
