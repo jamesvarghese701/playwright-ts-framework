@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:cucumber": "cucumber-js \"src/features/**/*.feature\" --require-module ts-node/register --require \"src/steps/**/*.ts\" --require \"src/support/**/*.ts\" --format progress --format \"html:reports/cucumber-report.html\" --format allure-cucumberjs/reporter"
+    "test:cucumber": "cucumber-js \"src/features/**/*.feature\" --require-module ts-node/register --require \"src/steps/**/*.ts\" --require \"src/support/**/*.ts\" --format progress --format \"html:reports/cucumber-report.html\" --format allure-cucumberjs/reporter",
+    "test": "npm run test:cucumber"
   },
   "keywords": [],
   "author": "",
