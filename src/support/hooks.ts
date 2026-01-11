@@ -9,7 +9,7 @@ let browser: Browser;
 
 BeforeAll(async function () {
 
-    browser = await chromium.launch({ headless: false,slowMo:500});
+    browser = await chromium.launch({ headless: true,slowMo:500});
 });
 
 Before(async function (this: CustomWorld) {
