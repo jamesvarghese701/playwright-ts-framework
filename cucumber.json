@@ -6,7 +6,8 @@
     "parallel" : 0,
     "format": [
       "progress", 
-      "html:reports/cucumber-report.html"
+      "html:reports/cucumber-report.html",
+      "allure-cucumberjs/reporter"
     ],
     "formatOptions": { "snippetInterface": "async-await" }
   }

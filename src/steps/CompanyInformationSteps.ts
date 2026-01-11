@@ -24,10 +24,10 @@ import { expect } from '@playwright/test';
 
                 switch (columns[0]) {
                     case 'company status' :
-                        expect(companyInformationPage.companyStatus).toContain(columns[1]);
+                        expect(companyInformationPage.companyStatus).toBe(columns[1]);
                         break;
                     case 'company type' :
-                        expect(companyInformationPage.companyType).toContain(columns[1]);
+                        expect(companyInformationPage.companyType).toBe(columns[1]);
                         break;
                     case 'Incorporated on' :
                         expect(companyInformationPage.companyCreationDate).toContain(columns[1]);
