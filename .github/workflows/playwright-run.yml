@@ -29,7 +29,11 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install chromium chrome msedge firefox webkit --with-deps
 
-      # 5️⃣ Run Playwright Tests (HTML report will be generated in playwright-report)
+      # 5️⃣ Create report folders
+      - name: Create report folders
+        run: mkdir -p reports allure-results
+      
+      # 5️⃣ Run Cucumber Tests (HTML report will be generated in playwright-report)
       - name: Run Cucumber Tests
         run: npm test
 
@@ -38,7 +42,7 @@ jobs:
         if: always()
         run: |
           if [ -d "allure-results" ]; then
-            npx allure generate allure-results --clean -o allure-report --clean
+            npx allure generate allure-results -o allure-report --clean
           else
             echo "Allure results folder missing, skipping report generation."
           fi
