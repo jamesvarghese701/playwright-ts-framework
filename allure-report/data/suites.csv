@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","2673","Search using valid format URN,","","2026-01-11","passed","2026-01-11","","","",""
+"","4108","Visit a page and check the page title","","2026-01-11","passed","2026-01-11","","","",""
+"","2319","Search for invalid","","2026-01-11","passed","2026-01-11","","","",""
+"","6053","Visit a page and check the page title","","2026-01-11","passed","2026-01-11","","","",""
