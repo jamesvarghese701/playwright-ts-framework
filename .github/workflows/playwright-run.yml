@@ -109,7 +109,8 @@ jobs:
         run: |
           mkdir -p gh-pages-deploy
           [ -d "allure-report" ] && cp -r allure-report gh-pages-deploy/ || echo "Skipping allure-report (not found)"
-          [ -f "reports/cucumber-report.html" ] && cp -r reports/cucumber-report.html gh-pages-deploy/cucumber/index.html || echo "Skipping cucumber HTML (not found)"
+          mkdir -p gh-pages-deploy/reports
+          [ -f "reports/cucumber-report.html" ] && cp reports/cucumber-report.html gh-pages-deploy/reports || echo "Skipping cucumber HTML (not found)"
           echo "Combined reports directory contents:"
           ls -R gh-pages-deploy
 
