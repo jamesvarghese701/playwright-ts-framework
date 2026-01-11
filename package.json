@@ -4,10 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:cucumber": "cucumber-js --config cucumber.js",
-    "test": "npm run test:cucumber",
-    "allure:generate": "npx allure generate allure-results --clean -o allure-report",
-    "allure:open": "npx allure open allure-report"
+    "test:cucumber": "cucumber-js \"src/features/**/*.feature\" --require-module ts-node/register --require \"src/steps/**/*.ts\" --require \"src/support/**/*.ts\" --format progress --format \"html:reports/cucumber-report.html\" --format allure-cucumberjs/reporter"
   },
   "keywords": [],
   "author": "",
